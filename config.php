@@ -5,16 +5,10 @@ $lon=$_GET['lon'];
 $METROS=$_GET['METROS'];
 
 
-ejecutarSQLCommand("INSERT INTO  `config` (
-`lat` ,
-`lon` ,
-`METROS`
-)
-VALUES (
-$lat ,
-$lon ,
-$METROS);");
+ejecutarSQLCommand("UPDATE `lat`= '$lat',
+`lon`='$lon' ,METROS
+`METROS`='$METROS'
+;");
 
-echo $id . ' ' . $lat . ' ' . $lon . ' ' . $METROS;
  ?>
 
