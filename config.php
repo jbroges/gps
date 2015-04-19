@@ -5,10 +5,7 @@ $lon=$_GET['lon'];
 $METROS=$_GET['METROS'];
 
 
-ejecutarSQLCommand("UPDATE `lat`= '$lat',
-`lon`='$lon' ,METROS
-`METROS`='$METROS'
-;");
+ejecutarSQLCommand("UPDATE config set `lat`= $lat,`lon`=$lon ,`METROS`=$METROS;");
 
  ?>
 
