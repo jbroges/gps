@@ -1,9 +1,8 @@
 <?php include ('functions.php');
-$cc=$_GET['cc'];
-$nombre=$_GET['id'];
-$apellido=$_GET['lat'];
-$direccion=$_GET['lon'];
-$telefono=$_GET['METROS'];
+$id=$_GET['id'];
+$lat=$_GET['lat'];
+$lon=$_GET['lon'];
+$METROS=$_GET['METROS'];
 
 
 ejecutarSQLCommand("INSERT INTO  `config` (
