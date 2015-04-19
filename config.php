@@ -22,4 +22,6 @@ VALUES (
 `METROS`='$METROS'
 ;");
 
+echo $id . ' ' . $lat . ' ' . $lon . ' ' . $METROS;
  ?>
+
