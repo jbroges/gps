@@ -4,7 +4,7 @@ header( 'Content-Type: text/html;charset=utf-8' );
 
 function ejecutarSQLCommand($commando){
  
-  $mysqli = new mysqli("localhost", "root", "", "dbprueba");
+  $mysqli = new mysqli("localhost", "admin", "manager", "gps");
 
 /* check connection */
 if ($mysqli->connect_errno) {
@@ -31,7 +31,7 @@ $mysqli->close();
 function getSQLResultSet($commando){
  
  
-  $mysqli = new mysqli("localhost", "root", "", "dbprueba");
+  $mysqli = new mysqli("localhost", "admin", "manager", "gps");
 
 /* check connection */
 if ($mysqli->connect_errno) {
