@@ -6,21 +6,14 @@ $METROS=$_GET['METROS'];
 
 
 ejecutarSQLCommand("INSERT INTO  `config` (
-`id` ,
 `lat` ,
 `lon` ,
 `METROS`
 )
 VALUES (
-'$id' ,
-'$lat' ,
-'$lon' ,
-'$METROS')
-
- ON DUPLICATE KEY UPDATE `lat`= '$lat',
-`lon`='$lon' ,METROS
-`METROS`='$METROS'
-;");
+$lat ,
+$lon ,
+$METROS);");
 
 echo $id . ' ' . $lat . ' ' . $lon . ' ' . $METROS;
  ?>
